@@ -7,4 +7,4 @@ describe('Cadastro correto', () => {
       cy.contains('Crie uma senha').should('be.visible')
       cy.contains('Repita a senha criada acima').should('be.visible')
     })
-  })
+  })        

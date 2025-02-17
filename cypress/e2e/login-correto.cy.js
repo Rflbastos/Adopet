@@ -5,9 +5,10 @@ describe('Pagina de login', () => {
     })
 
     it('Deve preencher os campos de login corretamente e autenticar o usuário', () => {
-     
-      cy.get('[data-test="input-loginEmail"]').type('josecuervo@email.com');
-      cy.get('[data-test="input-loginPassword"]').type('Senha123');
-      cy.get('[data-test="submit-button"]').click();
+        cy.login('josecuervo@email.com','Senha123');
+        // comando personalizado para boas praticas de programação e deiza o cod. mais limpo, ele subistui tudo abaixo e foi previamente programdo na aba suport>commands.js
+      //cy.get('[data-test="input-loginEmail"]').type('josecuervo@email.com');
+      //cy.get('[data-test="input-loginPassword"]').type('Senha123');
+      //cy.get('[data-test="submit-button"]').click();
     })
   })        
